@@ -39,7 +39,7 @@ export default function ProjectBox() {
 
     return (
         <div>
-            <ul uk-accordion="true">
+            <ul className="uk-list-divider uk-margin-medium-left uk-margin-medium-right uk-margin-medium-top uk-list-large" uk-accordion="true">
 
                 {projects.map((project) => (
                     <li key={project.name}>
