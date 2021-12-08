@@ -5,7 +5,7 @@ export default function ProjectBox({projects}) {
         <div>
             <ul>
 
-                {/* {projects.map((project) => (
+                {projects.map((project) => (
                     <li>
                         <a className="uk-accordion-title" href="#">{project.name}</a>
                         <div className="uk-accordion-content">
@@ -14,7 +14,7 @@ export default function ProjectBox({projects}) {
                             <div>{project.description}</div>
                         </div>
                     </li>
-                ))} */}
+                ))}
 
             </ul>
         </div>
