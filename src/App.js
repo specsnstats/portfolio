@@ -4,7 +4,13 @@ import ResumeModal from "./ResumeModal";
 
 function App() {
   return (
-    <div>
+    <div
+      style={{
+        backgroundColor: "rgb(25,26,27)",
+        height: "1000px",
+        color: "white"
+      }}
+    >
       <ResumeModal />
       <ProjectBox />
     </div>
