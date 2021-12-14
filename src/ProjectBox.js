@@ -53,25 +53,25 @@ export default function ProjectBox() {
     const techRender=(e)=>{
         if(e.includes("Handlebars")){
             return <div className="uk-flex uk-flex-center uk-flex-middle uk-margin-small-top">
-                <ReactMarkdown className="uk-margin-small-right">![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)</ReactMarkdown>
-                <ReactMarkdown className="uk-margin-small-right">![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)</ReactMarkdown>
-                <ReactMarkdown className="uk-margin-small-right">![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)</ReactMarkdown>
-                <ReactMarkdown className="uk-margin-small-right">![HandlebarsJS](https://img.shields.io/badge/Handlebars.js-orange?logo=handlebars.js&logoColor=black&style=for-the-badge)</ReactMarkdown>
+                <ReactMarkdown className="uk-margin-small-right">![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=plastic&logo=css3&logoColor=white)</ReactMarkdown>
+                <ReactMarkdown className="uk-margin-small-right">![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=plastic&logo=javascript&logoColor=%23F7DF1E)</ReactMarkdown>
+                <ReactMarkdown className="uk-margin-small-right">![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=plastic&logo=html5&logoColor=white)</ReactMarkdown>
+                <ReactMarkdown className="uk-margin-small-right">![HandlebarsJS](https://img.shields.io/badge/Handlebars.js-orange?logo=handlebars.js&logoColor=black&style=plastic)</ReactMarkdown>
                 </div>
             
         } else if (e.includes("React")){
             return <div className="uk-flex uk-flex-center uk-flex-middle uk-margin-small-top">
-                <ReactMarkdown className="uk-margin-small-right">![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)</ReactMarkdown>
-                <ReactMarkdown className="uk-margin-small-right">![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)</ReactMarkdown>
-                <ReactMarkdown className="uk-margin-small-right">![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)</ReactMarkdown>
-                <ReactMarkdown className="uk-margin-small-right">![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)</ReactMarkdown>
-                <ReactMarkdown className="uk-margin-small-right">![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)</ReactMarkdown>
+                <ReactMarkdown className="uk-margin-small-right">![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=plastic&logo=css3&logoColor=white)</ReactMarkdown>
+                <ReactMarkdown className="uk-margin-small-right">![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=plastic&logo=javascript&logoColor=%23F7DF1E)</ReactMarkdown>
+                <ReactMarkdown className="uk-margin-small-right">![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=plastic&logo=html5&logoColor=white)</ReactMarkdown>
+                <ReactMarkdown className="uk-margin-small-right">![React](https://img.shields.io/badge/react-%2320232a.svg?style=plastic&logo=react&logoColor=%2361DAFB)</ReactMarkdown>
+                <ReactMarkdown className="uk-margin-small-right">![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=plastic&logo=redux&logoColor=white)</ReactMarkdown>
                 </div>
         } else {
             return <div className="uk-flex uk-flex-center uk-flex-middle uk-margin-small-top">
-                <ReactMarkdown className="uk-margin-small-right">![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)</ReactMarkdown>
-                <ReactMarkdown className="uk-margin-small-right">![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)</ReactMarkdown>
-                <ReactMarkdown className="uk-margin-small-right">![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)</ReactMarkdown>
+                <ReactMarkdown className="uk-margin-small-right">![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=plastic&logo=css3&logoColor=white)</ReactMarkdown>
+                <ReactMarkdown className="uk-margin-small-right">![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=plastic&logo=javascript&logoColor=%23F7DF1E)</ReactMarkdown>
+                <ReactMarkdown className="uk-margin-small-right">![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=plastic&logo=html5&logoColor=white)</ReactMarkdown>
                 </div>
         } 
     }
