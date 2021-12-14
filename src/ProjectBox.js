@@ -4,8 +4,6 @@ import rainbowManatee from "./img/rainbow-manatee.png"
 import scheduler from "./img/scheduler.jpg"
 import petit from "./img/petit.png";
 import ReactMarkdown from 'react-markdown'
-import reactMarkdown from "react-markdown";
-
 
 const projects = [
     {
@@ -98,7 +96,7 @@ export default function ProjectBox() {
                                 <div>{techRender(project.tech)}</div>
                             </div>
                             <div className="uk-flex-box">
-                                <img className="uk-flex-center" src={project.img} style={{height:"auto"}}/>
+                                <img className="uk-flex-center" alt="element taken from project page" src={project.img} style={{height:"auto"}}/>
                             </div>
                         </div>
                     </li>
