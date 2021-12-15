@@ -6,7 +6,7 @@ export default function ResumeModal() {
     }
 
     return(
-        <div className="uk-margin-medium-top uk-flex uk-flex-center">
+        <div className="uk-margin-small-top uk-flex uk-flex-center">
             <button className="uk-button-default uk-button-large" target="_blank" onClick={openResume} >Resume</button>
         </div>
     

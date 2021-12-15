@@ -25,7 +25,7 @@ function App() {
 
 
   return (
-    <div>
+    <div className="uk-margin-small-left">
       <div className="uk-margin"
         style={{
           display:"flex",
@@ -33,7 +33,7 @@ function App() {
           justifyContent: "center",
           margin: "auto"
         }}>
-        <div className="uk-flex-box uk-flex-center" style={{ width: width > 1200 ? "50%" : "100%" }}>
+        <div className="uk-flex-box uk-flex-center" style={{ width: width > 1200 ? "50%" : "100%"}}>
           <Slideshow colorState={colorState} />
           <Socials />
         </div>
