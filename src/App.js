@@ -23,10 +23,13 @@ function App() {
     setWindowWidth(width)
   }
 
-  console.log(width)
-
   return (
-    <div className="uk-margin-small-left uk-margin-small-top">
+    <div style={{
+      backgroundColor:"#191919",
+      color:"white",
+      height:width>1200?"900px":"1900px"
+    }} 
+    className="uk-padding-small">
       <div className="uk-margin"
         style={{
           display:"flex",

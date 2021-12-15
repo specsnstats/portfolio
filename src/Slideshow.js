@@ -25,7 +25,7 @@ export default function Slideshow(props) {
                         <div className="image-container uk-flex uk-flex-center">
                             <img className="" style={{maxHeight:"400px"}} src={slideImage.url}/>
                         </div>
-                        <h5 className="uk-flex uk-flex-center uk-text-center">{slideImage.caption}</h5>
+                        <h5 style={{color:"white"}}className="uk-flex uk-flex-center uk-text-center">{slideImage.caption}</h5>
                     </div>
                 ))}
             </Slide>
