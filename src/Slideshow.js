@@ -2,7 +2,7 @@ import React from "react";
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import testImage from "./img/test-image.JPG";
-import family from "./img/family.png";
+import family from "./img/family.jpg";
 
 export default function Slideshow(props) {
 
