@@ -75,6 +75,7 @@ export default function ProjectBox(props) {
                 </div>
         } 
     }
+    console.log(props.width)
 
     return (
         <div>
@@ -92,13 +93,13 @@ export default function ProjectBox(props) {
                             display:props.width>1200?"flex":"inline-block"
                         }} 
                         className="uk-accordion-content uk-flex">
-                            <div style={{width: "70%"}}>
+                            <div style={{width: props.width>1200?"70%":"100%"}}>
                                 <a className="uk-margin-medium-right uk-margin-medium-left" href={project.github} rel="noreferrer" target="_blank">Github Repo</a>
                                 <a href={project.url} rel="noreferrer" target="_blank">Live Website</a>
-                                <div className="uk-margin-small-top" style={{textDecoration:"underline"}}>Project Description</div>
+                                <div className="uk-margin-small-top" style={{textDecoration:"underline"}}>Description</div>
                                 <div>{project.description}</div>
                                 <br/>
-                                <div style={{textDecoration:"underline"}}>Project Contribution</div>
+                                <div style={{textDecoration:"underline"}}>Contribution</div>
                                 <div>{project.contribution}</div>
                                 <br/>
                                 <div>{techRender(project.tech)}</div>

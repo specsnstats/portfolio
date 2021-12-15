@@ -23,9 +23,10 @@ function App() {
     setWindowWidth(width)
   }
 
+  console.log(width)
 
   return (
-    <div className="uk-margin-small-left">
+    <div className="uk-margin-small-left uk-margin-small-top">
       <div className="uk-margin"
         style={{
           display:"flex",
@@ -36,11 +37,11 @@ function App() {
         <div className="uk-flex-box uk-flex-center" style={{ width: width > 1200 ? "50%" : "100%"}}>
           <Slideshow colorState={colorState} />
           <Socials />
+          <ResumeModal />
+          <Contact/>
         </div>
         <div className="uk-flex-center" style={{ width: width > 1200 ? "50%" : "100%" }}>
-          <ResumeModal />
-          <ProjectBox setColorState={setColorState} />
-          <Contact />
+          <ProjectBox setColorState={setColorState} width={width}/>
         </div>
       </div>
     </div>
