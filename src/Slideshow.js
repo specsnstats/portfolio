@@ -23,7 +23,7 @@ export default function Slideshow(props) {
                 {slideImages.map((slideImage, index)=>(
                     <div className="each-fade" key={index}>
                         <div className="image-container uk-flex uk-flex-center">
-                            <img className="" style={{maxHeight:"400px"}} src={slideImage.url}/>
+                            <img className="" style={{maxHeight:"400px"}} alt="slideshow images of Jonathan Newman and his family" src={slideImage.url}/>
                         </div>
                         <h5 style={{color:"white"}}className="uk-flex uk-flex-center uk-text-center">{slideImage.caption}</h5>
                     </div>
