@@ -14,7 +14,7 @@ const projects = [
         description: "Animal Crossing: New Horizons Island Manager feeds info from an API and tracks user inputs with Local Storage, allowing them to filter and sort based off of desired results. These results are then saved the next time you visit, and whenever you leave the website.",
         contribution:"In this project, I was the Project Manager in a group with 3 other developers. My responsibilities also were fetching the API info, and displaying it in the table on the page, depending on the filters/categories that the user selected. I was also responsible for every time the user clicked on the box of a collectible, the local storage would update to reflect the user selection. I also provided support for other team members in the styling of the website.",
         tech:"Javascript, HTML, CSS",
-        color:"#7DB0F2"
+        color:"125,176,242",
     },
     {
         name: "Manatee Cookie-Clicker",
@@ -24,7 +24,7 @@ const projects = [
         description: "A cookie clicker with a back-end server and database that keeps track of user scores and levels to display to a learderboard. Full login functionality (including the ability to update password/username), and integration of several technologies.",
         contribution: "In this project, I was the Project Manager in a group with 3 other developers. My responsibilities in the project itself were handling the functionality of the cookie clicker, the upgrading/purchasing of manatees, the modal showing the name/role/img of the developers, and dealing with the Login/Logout functionality.",
         tech:"JS, HTML, CSS, Handlebars",
-        color:"#B83D53"
+        color:"184,61,83",
     },
     {
         name: "PetIt",
@@ -34,7 +34,7 @@ const projects = [
         description: "Website designed for User-Driven reviews on the pet-friendliness of establishments, both for a customer and a job POV. Fetches locations from google's API, and displays the information saved to the database that cooresponds to that specific location",
         contribution:"In this project, I was the Project Manager in a group with 3 other developers. My responsibilities in the project itself were creating the page navigation and Login/Signup/Profile functionality. I was also in charge of grabbing the information from the database and displaying/formatting it correctly on the individual locations page, changing whether the location is a Job or an Establishment.",
         tech:"JS, HTML, CSS, React",
-        color:"#BCCC74"
+        color:"188,204,116",
     },
     {
         name: "Day Scheduler",
@@ -44,11 +44,11 @@ const projects = [
         description: "Simple app that allows users to schedule their days from the hours of 9am to 5pm, then saving your information to Local Storage.",
         contribution: "This was a solo project wherein I created the entire website from the CSS/Styling to the Javascript that runs the processes",
         tech:"HTML, CSS, JS",
-        color:"#056BC2"
+        color:"5,107,194",
     }
 ];
 
-export default function ProjectBox() {
+export default function ProjectBox(props) {
 
     const techRender=(e)=>{
         if(e.includes("Handlebars")){
@@ -81,8 +81,13 @@ export default function ProjectBox() {
             <ul className="uk-list-divider uk-margin-medium-left uk-margin-medium-right uk-margin-medium-top uk-list-large" uk-accordion="true">
 
                 {projects.map((project) => (
-                    <li key={project.name}>
-                        <a className="uk-accordion-title" href="#">{project.name}</a>
+                    <li key={project.name} onClick={props.setColorState(project.color)}>
+                        <a style={{
+                            padding:"10px",
+                            background: `rgb(${project.color})`,
+                            background: `linear-gradient(90deg, rgba(${project.color}, 1) 0%, rgba(0,0,0,1)100%)`,
+
+                        }} className="uk-accordion-title" href="#">{project.name}</a>
                         <div className="uk-accordion-content uk-flex">
                             <div style={{width: "70%"}}>
                                 <a className="uk-margin-medium-right uk-margin-medium-left" href={project.github} rel="noreferrer" target="_blank">Github Repo</a>
