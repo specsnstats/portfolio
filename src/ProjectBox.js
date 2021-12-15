@@ -88,7 +88,10 @@ export default function ProjectBox(props) {
                             background: `linear-gradient(90deg, rgba(${project.color}, 1) 0%, rgba(0,0,0,1)100%)`,
 
                         }} className="uk-accordion-title" href="#">{project.name}</a>
-                        <div className="uk-accordion-content uk-flex">
+                        <div style={{
+                            display:props.width>1200?"flex":"inline-block"
+                        }} 
+                        className="uk-accordion-content uk-flex">
                             <div style={{width: "70%"}}>
                                 <a className="uk-margin-medium-right uk-margin-medium-left" href={project.github} rel="noreferrer" target="_blank">Github Repo</a>
                                 <a href={project.url} rel="noreferrer" target="_blank">Live Website</a>

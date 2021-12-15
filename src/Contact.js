@@ -7,7 +7,7 @@ export default function Contact() {
             <div>Contact:</div>
             <div className="uk-margin-small-left">Phone: 801-834-5798</div>
             <div className="uk-margin-small-left">Email: <a href="mailto: specsnstats@gmail.com">specsnstats@gmail.com</a></div>
-            <div><a href="https://discordapp.com/users/332235875670818816">Discord</a></div>
+            <div className="uk-margin-small-left"><a href="https://discordapp.com/users/332235875670818816">Discord</a></div>
         </div>
         )
 }
