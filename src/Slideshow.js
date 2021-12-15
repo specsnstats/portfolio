@@ -1,15 +1,15 @@
 import React from "react";
-import { Slide } from 'react-slideshow-image';
+import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import testImage from "./img/test-image.JPG";
-import family from "./img/family.jpg";
+import family from "./img/family.png";
 
 export default function Slideshow(props) {
 
-    const slideImages =[
+    const fadeImages =[
         {
             url: testImage,
-            caption: "Slide 1"
+            caption: "fade 1"
         },
         {
             url: family,
@@ -18,17 +18,17 @@ export default function Slideshow(props) {
     ]
 
     return (
-        <div styles={{height:"300px"}} className="slide-container">
-            <Slide>
-                {slideImages.map((slideImage, index)=>(
+        <div styles={{height:"300px"}} className="fade-container">
+            <Fade>
+                {fadeImages.map((fadeImage, index)=>(
                     <div className="each-fade" key={index}>
                         <div className="image-container uk-flex uk-flex-center">
-                            <img className="" style={{maxHeight:"400px"}} alt="slideshow images of Jonathan Newman and his family" src={slideImage.url}/>
+                            <img className="" style={{maxHeight:"400px"}} alt="fadeshow images of Jonathan Newman and his family" src={fadeImage.url}/>
                         </div>
-                        <h5 style={{color:"white"}}className="uk-flex uk-flex-center uk-text-center">{slideImage.caption}</h5>
+                        <h5 style={{color:"white"}}className="uk-flex uk-flex-center uk-text-center">{fadeImage.caption}</h5>
                     </div>
                 ))}
-            </Slide>
+            </Fade>
         </div>
     )
 }
