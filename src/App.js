@@ -7,7 +7,6 @@ import Contact from "./Contact";
 
 function App() {
 
-  const [colorState, setColorState] = useState("")
   const [width, setWindowWidth] = useState()
 
   useEffect(() => {
@@ -38,7 +37,7 @@ function App() {
           margin: "auto"
         }}>
         <div className="uk-flex-box uk-flex-center" style={{ width: width > 1200 ? "50%" : "100%"}}>
-          <Slideshow colorState={colorState} />
+          <Slideshow />
           <Socials />
           <ResumeModal />
           <Contact/>
