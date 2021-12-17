@@ -2,18 +2,24 @@ import React from "react";
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import testImage from "./img/test-image.JPG";
-import family from "./img/family.png";
+import family from "./img/family.jpg";
+import profileOld from "./img/old-profile.jpg";
+import twitch from "./img/twitch.jpg";
 
 export default function Slideshow(props) {
 
     const fadeImages =[
         {
-            url: testImage,
-            caption: "fade 1"
-        },
-        {
             url: family,
             caption: "Family man looking to give his loved ones the best life possible"
+        },
+        {
+            url: profileOld,
+            caption: "Extensive experience working with and leading teams to meet deadlines and build growth"
+        },
+        {
+            url:twitch,
+            caption:"Twitch Partner with a rich and fun personality"
         }
     ]
 
