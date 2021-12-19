@@ -43,9 +43,10 @@ function App() {
           <Contact/>
         </div>
         <div className="uk-flex-center" style={{ width: width > 1200 ? "50%" : "100%" }}>
-          <ProjectBox setColorState={setColorState} width={width}/>
+          <ProjectBox width={width}/>
         </div>
       </div>
+      <footer></footer>
     </div>
   );
 }
