@@ -5,6 +5,7 @@ import family from "./img/family.jpg";
 import profileOld from "./img/old-profile.jpg";
 import twitch from "./img/twitch.jpg";
 import profileNew from "./img/new-profile.jpg";
+import "./Slideshow.css"
 
 export default function Slideshow() {
 
@@ -33,11 +34,15 @@ export default function Slideshow() {
                 {fadeImages.map((fadeImage, index)=>(
                     <div className="each-fade" key={index}>
                         <div className="image-container uk-flex uk-flex-center">
-                            <img 
+                            <img className="feather"
                             style={{
                                 maxHeight:"400px",
-                                borderRadius:"50%",
-                                boxShadow: "0px 0px 25px 25px rgba(255,255,255,0.2)"
+                                maskImage:`var(radial-gradient(
+                                    #000f calc(var(calc(100% * 2 / 3)) - var(10%)),
+                                    #0000 var(calc(100% * 2 / 3)))`,
+                                WebkitMaskImage:`var(radial-gradient(
+                                    #000f calc(var(calc(100% * 2 / 3)) - var(10%)),
+                                    #0000 var(calc(100% * 2 / 3)))`
                                 
                                 }} 
                             alt={fadeImage.caption} src={fadeImage.url}/>

@@ -1,0 +1,10 @@
+.feather {
+    --thres: calc(100% * 2 / 3);
+    --feather: 10%;
+    --mask: radial-gradient(
+      #000f calc(var(--thres) - var(--feather)),
+      #0000 var(--thres)
+    );
+    mask-image: var(--mask);
+    -webkit-mask-image: var(--mask);
+  }
