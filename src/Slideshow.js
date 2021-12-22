@@ -30,7 +30,7 @@ export default function Slideshow() {
 
     return (
         <div styles={{height:"300px"}} className="fade-container">
-            <Fade>
+            <Fade duration={7000} defaultIndex={0} infinite={true}>
                 {fadeImages.map((fadeImage, index)=>(
                     <div className="each-fade" key={index}>
                         <div className="image-container uk-flex uk-flex-center">
